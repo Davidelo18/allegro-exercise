@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Książki o Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="header">
+        <span class="header__js">JS</span>’owe książki
+    </h1>
+
+    <nav class="navigation">
+        <h2 class="navigation__header">Sortuj po</h2>
+        <ul class="navigation__list">
+            <li class="navigation__element">
+                <input id="navRadio1" class="navigation__radio" name="sort" type="radio">
+                <label for="navRadio1"> ilości stron</label>
+            </li>
+            <li class="navigation__element">
+                <input id="navRadio2" class="navigation__radio" name="sort" type="radio">
+                <label for="navRadio2"> dacie wydania</label>
+            </li>
+            <li class="navigation__element">
+                <input id="navRadio3" class="navigation__radio" name="sort" type="radio">
+                <label for="navRadio3"> nazwisku autora</label>
+            </li>
+        </ul>
+        <h2 class="navigation__header">Pokaż tylko</h2>
+        <ul class="navigation__list">
+            <li>
+                <label>Powyżej <input id="pagesAm" class="navigation__text" type="text"> stron</label>
+            </li>
+        </ul>
+        <button class="navigation__btn" id="clearBtn">Wyczyść</button>
+    </nav>
+
+    <main class="main">
+        <ol class="main__list" id="mainPart">
+            <li class="main__list-element">
+                <span class="main__number"></span>
+                <a class="main__link--image" href="https://covers.oreillystatic.com/images/9780596517748/lrg.jpg">
+                    <img src="https://covers.oreillystatic.com/images/9780596517748/cat.gif">
+                </a>
+                <section class="main__infosection">
+                    <h3 class="main__booktitle">JavaScript: The Good Parts</h3>
+                    <p class="main__author">By Douglas <span class="authorName">Crockford</span></p>
+                    <p class="main__info">Release Date: <span class="month">12</span>/<span class="year">2008</span></p>
+                    <p class="main__info">Pages: <span class="pageAmount">172</span></p>
+                    <p class="main__info">Link: <a class="main__link"
+                            href="http://shop.oreilly.com/product/9780596517748.do" target="_blank">shop</a></p>
+                </section>
+            </li>
+            <li class="main__list-element">
+                <span class="main__number"></span>
+                <a class="main__link--image" href="https://covers.oreillystatic.com/images/9780596000486/lrg.jpg">
+                    <img src="https://covers.oreillystatic.com/images/9780596000486/cat.gif">
+                </a>
+                <section class="main__infosection">
+                    <h3 class="main__booktitle">JavaScript: The Definitive Guide</h3>
+                    <p class="main__author">By David <span class="authorName">Flanagan</span></p>
+                    <p class="main__info">Release Date: <span class="month">11</span>/<span class="year">2001</span></p>
+                    <p class="main__info">Pages: <span class="pageAmount">936</span></p>
+                    <p class="main__info">Link: <a class="main__link"
+                            href="http://shop.oreilly.com/product/9780596000486.do" target="_blank">shop</a></p>
+                </section>
+            </li>
+            <li class="main__list-element">
+                <span class="main__number"></span>
+                <a class="main__link--image" href="https://covers.oreillystatic.com/images/0636920025832/lrg.jpg">
+                    <img src="https://covers.oreillystatic.com/images/0636920025832/cat.gif">
+                </a>
+                <section class="main__infosection">
+                    <h3 class="main__booktitle">Learning JavaScript Design Patterns</h3>
+                    <p class="main__author">By Addy <span class="authorName">Osmani</span></p>
+                    <p class="main__info">Release Date: <span class="month">08</span>/<span class="year">2012</span></p>
+                    <p class="main__info">Pages: <span class="pageAmount">254</span></p>
+                    <p class="main__info">Link: <a class="main__link"
+                            href="http://shop.oreilly.com/product/0636920025832.do" target="_blank">shop</a></p>
+                </section>
+            </li>
+            <li class="main__list-element">
+                <span class="main__number"></span>
+                <a class="main__link--image" href="https://covers.oreillystatic.com/images/0636920027713/lrg.jpg">
+                    <img src="https://covers.oreillystatic.com/images/0636920027713/cat.gif">
+                </a>
+                <section class="main__infosection">
+                    <h3 class="main__booktitle">JavaScript Enlightenment</h3>
+                    <p class="main__author">By Cody <span class="authorName">Lindley</span></p>
+                    <p class="main__info">Release Date: <span class="month">12</span>/<span class="year">2012</span></p>
+                    <p class="main__info">Pages: <span class="pageAmount">166</span></p>
+                    <p class="main__info">Link: <a class="main__link"
+                            href="http://shop.oreilly.com/product/0636920027713.do" target="_blank">shop</a></p>
+                </section>
+            </li>
+            <li class="main__list-element">
+                <span class="main__number"></span>
+                <a class="main__link--image" href="https://covers.oreillystatic.com/images/0636920033141/lrg.jpg">
+                    <img src="https://covers.oreillystatic.com/images/0636920033141/cat.gif">
+                </a>
+                <section class="main__infosection">
+                    <h3 class="main__booktitle">Programming JavaScript Applications</h3>
+                    <p class="main__author">By Eric <span class="authorName">Elliott</span></p>
+                    <p class="main__info">Release Date: <span class="month">07</span>/<span class="year">2014</span></p>
+                    <p class="main__info">Pages: <span class="pageAmount">254</span></p>
+                    <p class="main__info">Link: <a class="main__link"
+                            href="http://shop.oreilly.com/product/0636920033141.do" target="_blank">shop</a></p>
+                </section>
+            </li>
+            <li class="main__list-element">
+                <span class="main__number"></span>
+                <a class="main__link--image" href="https://covers.oreillystatic.com/images/0636920047124/lrg.jpg">
+                    <img src="https://covers.oreillystatic.com/images/0636920047124/cat.gif">
+                </a>
+                <section class="main__infosection">
+                    <h3 class="main__booktitle">Practical Modern JavaScript</h3>
+                    <p class="main__author">By Nicolas <span class="authorName">Bevacqua</span></p>
+                    <p class="main__info">Release Date: <span class="month">07</span>/<span class="year">2017</span></p>
+                    <p class="main__info">Pages: <span class="pageAmount">334</span></p>
+                    <p class="main__info">Link: <a class="main__link"
+                            href="http://shop.oreilly.com/product/0636920047124.do" target="_blank">shop</a></p>
+                </section>
+            </li>
+        </ol>
+
+        <section id="popupImgDiv" class="popup">
+            <div class="popup__background"></div>
+            <img id="popupImg" class="popup__image" src="" alt="Powiększony obraz">
+            <span id="popupClose" class="popup__close">X</span>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
